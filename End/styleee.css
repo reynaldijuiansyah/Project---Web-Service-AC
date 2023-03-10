@@ -1,0 +1,33 @@
+body, html {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  color: #364f6b;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.typing > * {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingAnim 3s steps(27);
+
+}
+
+@keyframes typingAnim {
+  from {width: 0}
+  to {width: 100%}
+}
+
+.typing h1 {
+  font-family: "Open Sans", sans-serif;;
+}
